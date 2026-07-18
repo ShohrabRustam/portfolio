@@ -64,6 +64,14 @@ Backend Software Engineer with 4+ years of experience architecting high-performa
 
 Download my detailed resume: [resume.pdf](./resume.pdf)
 
+## 📸 Photo
+
+Portfolio includes professional photo section. To add your photo:
+- Add `profile-photo.jpg` to the root folder
+- Or use the automated script: `./add-photo.sh`
+- Or use the default avatar (already configured)
+- See [ADD_YOUR_PHOTO.md](./ADD_YOUR_PHOTO.md) for details
+
 ## 🚀 Deployment
 
 This portfolio is deployed on Netlify and can be accessed at the live URL above.

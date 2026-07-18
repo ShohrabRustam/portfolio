@@ -107,9 +107,10 @@ Portfolio/
 ├── QUICK_START.txt               ← This file
 └── resume.pdf                    ← Add your resume here!
 
-Optional (add later):
-├── profile-photo.jpg             ← Your photo
-└── CNAME                         ← Custom domain
+Optional (add if you have):
+├── profile-photo.jpg             ← Your photo (see ADD_YOUR_PHOTO.md)
+├── profile-photo.png             ← Or PNG format
+└── CNAME                         ← Custom domain (advanced)
 
 ═══════════════════════════════════════════════════════════
     ✅ WHAT'S ALREADY DONE
