@@ -8,9 +8,17 @@
     <link rel="canonical" href="https://shohrabrustam.github.io/portfolio/">
     <title>Shohrab Rustam | Backend Software Engineer</title>
     <script>
-        if (window.location.href !== window.location.href.toLowerCase()) {
-            window.location.replace(window.location.href.toLowerCase());
-        }
+        // Make ENTIRE URL case-insensitive (repository, paths, hash, query)
+        (function() {
+            var currentUrl = window.location.href;
+            var lowercaseUrl = currentUrl.toLowerCase();
+            
+            // Only redirect if URL has uppercase characters
+            if (currentUrl !== lowercaseUrl) {
+                console.log('Redirecting to lowercase:', lowercaseUrl);
+                window.location.replace(lowercaseUrl);
+            }
+        })();
     </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
