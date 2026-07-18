@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shohrab Rustam - Backend Software Engineer with 4+ years experience in Java, Spring Boot, Microservices">
+    <meta name="keywords" content="Java Developer, Spring Boot, Microservices, Backend Engineer, Software Engineer">
+    <title>Shohrab Rustam | Backend Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Shohrab Rustam</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Shohrab Rustam</span></h1>
+                <h2 class="hero-subtitle">Backend Software Engineer</h2>
+                <p class="hero-description">
+                    4+ years of experience architecting high-performance microservices and distributed systems 
+                    for fintech platforms serving 20M+ users. Expert in Java, Spring Boot, and Apache Kafka.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>4+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>20M+</h3>
+                        <p>Users Served</p>
+                    </div>
+                    <div class="stat">
+                        <h3>99.9%</h3>
+                        <p>System Uptime</p>
+                    </div>
+                    <div class="stat">
+                        <h3>2M+</h3>
+                        <p>Daily Transactions</p>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="profile-image">
+                        <img src="profile-photo.jpg" alt="Shohrab Rustam - Backend Software Engineer" onerror="this.src='https://ui-avatars.com/api/?name=Shohrab+Rustam&size=300&background=2563eb&color=fff&bold=true&font-size=0.4'">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm a Backend Software Engineer with 4+ years of experience building scalable, high-performance 
+                        systems for fintech applications. Currently working at mPokket Financial Services, I specialize 
+                        in microservices architecture, event-driven systems, and distributed computing.
+                    </p>
+                    <p>
+                        My expertise includes architecting systems that handle 2M+ transactions daily, optimizing API 
+                        performance by 40%, and leading technical migrations from monolithic to microservices architectures. 
+                        I've successfully increased system uptime from 97% to 99.9% through effective monitoring, debugging, 
+                        and production support strategies.
+                    </p>
+                    <p>
+                        I'm passionate about writing clean, maintainable code, mentoring junior developers, and staying 
+                        current with the latest technologies in backend engineering. I also leverage AI development tools 
+                        like Cursor AI, Amazon Q, and Claude AI to enhance productivity and code quality.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Best Performer Q3 2023</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <span>Mentored 5+ Developers</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>15+ Microservices Built</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bangalore, India</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>mohdrustam001@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 7417 200 362</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>B.Tech in IT</span>
+                    </div>
+                    <a href="resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineer</h3>
+                            <span class="timeline-date">Dec 2021 - Present</span>
+                        </div>
+                        <h4>mPokket Financial Services Pvt. Ltd.</h4>
+                        <ul>
+                            <li>Architected 15+ Spring Boot microservices using Kafka and Redis, serving 20M+ users with 2M+ daily transactions</li>
+                            <li>Led monolithic-to-microservices migration, reducing API latency by 60ms (40%)</li>
+                            <li>Optimized REST APIs by 30% through caching and query tuning; reduced production incidents by 45%</li>
+                            <li>Mentored 5 developers and conducted 50+ weekly code reviews, improving code quality from 65% to 90%</li>
+                            <li>Integrated 10+ third-party services (payment gateways, CRM, KYC) with 99.95% success rate</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Associate Software Engineer</h3>
+                            <span class="timeline-date">Jun 2021 - Dec 2021</span>
+                        </div>
+                        <h4>InvestCloud Pvt. Ltd.</h4>
+                        <ul>
+                            <li>Optimized 20+ legacy Java APIs for wealth management platforms, improving response times by 25%</li>
+                            <li>Resolved 50+ critical production issues with systematic debugging</li>
+                            <li>Delivered 30+ backend enhancements with 85% code coverage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Real-Time Payment Processing Engine</h3>
+                    <p>
+                        Architected transaction system handling 2M daily transactions with zero data loss using Java, Kafka, 
+                        Redis, PostgreSQL. Achieved sub-200ms response time via event-driven architecture and reduced database load by 60%.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Kafka</span>
+                        <span>Redis</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <strong>2M+</strong>
+                            <span>Daily Transactions</span>
+                        </div>
+                        <div class="metric">
+                            <strong>60%</strong>
+                            <span>DB Load Reduction</span>
+                        </div>
+                        <div class="metric">
+                            <strong>&lt;200ms</strong>
+                            <span>Response Time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <h3>Digital Lending Platform</h3>
+                    <p>
+                        Built 25+ REST APIs serving 20M users (99.9% availability). Developed penalty engine processing 500K+ 
+                        calculations daily. Integrated CRM reducing resolution time by 40%.
+                    </p>
+                    <div class="project-tech">
+                        <span>Spring Boot</span>
+                        <span>PostgreSQL</span>
+                        <span>JWT</span>
+                        <span>RBAC</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <strong>20M</strong>
+                            <span>Users</span>
+                        </div>
+                        <div class="metric">
+                            <strong>500K+</strong>
+                            <span>Daily Calculations</span>
+                        </div>
+                        <div class="metric">
+                            <strong>40%</strong>
+                            <span>Faster Resolution</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Document Processing Microservices</h3>
+                    <p>
+                        Led Laravel-to-Spring Boot migration achieving 3x performance and 10x scalability. Reduced processing 
+                        time from 10s to 3s via Kafka streaming and S3 storage.
+                    </p>
+                    <div class="project-tech">
+                        <span>Spring Boot</span>
+                        <span>Kafka</span>
+                        <span>AWS S3</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <strong>3x</strong>
+                            <span>Performance</span>
+                        </div>
+                        <div class="metric">
+                            <strong>10x</strong>
+                            <span>Scalability</span>
+                        </div>
+                        <div class="metric">
+                            <strong>70%</strong>
+                            <span>Time Reduction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Hibernate</span>
+                        <span>JPA</span>
+                        <span>DSA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases & Messaging</h3>
+                    <div class="skill-tags">
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>Redis</span>
+                        <span>Kafka</span>
+                        <span>RabbitMQ</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>Jenkins</span>
+                        <span>Git</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-project-diagram"></i> Architecture</h3>
+                    <div class="skill-tags">
+                        <span>Microservices</span>
+                        <span>REST APIs</span>
+                        <span>Event-Driven</span>
+                        <span>System Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> AI & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Cursor AI</span>
+                        <span>Amazon Q</span>
+                        <span>Claude AI</span>
+                        <span>ELK Stack</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tasks"></i> Methodologies</h3>
+                    <div class="skill-tags">
+                        <span>Agile</span>
+                        <span>Scrum</span>
+                        <span>TDD</span>
+                        <span>Code Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always open to discussing new opportunities, interesting projects, 
+                        or just having a chat about technology and software engineering.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:mohdrustam001@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>mohdrustam001@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+917417200362" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <span>+91 7417 200 362</span>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Bangalore, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Shohrab Rustam. All rights reserved.</p>
+            <p>Backend Software Engineer | Java | Spring Boot | Microservices</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
