@@ -1,0 +1,147 @@
+/* ============================================
+   SKILLS SECTION
+   ============================================ */
+
+.skills {
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(30, 64, 175, 0.08);
+    border: 1px solid rgba(30, 64, 175, 0.08);
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    box-shadow: 0 16px 40px rgba(30, 64, 175, 0.12);
+    transform: translateY(-4px);
+    border-color: rgba(30, 64, 175, 0.16);
+}
+
+.skill-category h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.skill-category i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.skill-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s;
+}
+
+.skill-item:last-child {
+    border-bottom: none;
+}
+
+.skill-item:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.skill-item.past-skill {
+    opacity: 0.6;
+}
+
+.skill-item-name {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.skill-item-bar {
+    height: 6px;
+    background: var(--border-color);
+    border-radius: 999px;
+    margin-top: 0.4rem;
+    overflow: hidden;
+}
+
+.skill-item-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: 999px;
+    animation: fillProgress 1s ease-out forwards;
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress, 80%);
+    }
+}
+
+/* Ensure skill-tags styling works here too */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-tags span {
+    background: var(--bg-light);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.skill-tags span:hover {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(30, 64, 175, 0.3);
+}
+
+.skill-tags span.past-skill {
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.skill-tags span.past-skill:hover {
+    opacity: 0.9;
+}
+
+.skill-tag-highlight {
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(37, 99, 235, 0.1)) !important;
+    border: 1px solid rgba(30, 64, 175, 0.2) !important;
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+.skill-tag-highlight:hover {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color)) !important;
+    color: white !important;
+    border: 1px solid transparent !important;
+}
