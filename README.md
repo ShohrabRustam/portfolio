@@ -1,53 +1,89 @@
-# 🚀 Shohrab Rustam - Portfolio Website
+# 💼 Shohrab Rustam - Professional Portfolio
 
-A professional, responsive portfolio website showcasing backend engineering expertise, projects, and experience.
+A modern, responsive portfolio website showcasing 4+ years of backend engineering expertise in Java, Spring Boot, and Microservices architecture.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://your-portfolio-url.netlify.app)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://shohrabrustam.github.io/portfolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-ShohrabRustam-blue)](https://github.com/ShohrabRustam)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-shohrabrustam-0077b5)](https://www.linkedin.com/in/shohrabrustam)
 
-## 📋 Table of Contents
+## 👨‍💻 About
 
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Deployment](#deployment)
-- [Technologies Used](#technologies-used)
-- [Customization](#customization)
-- [Contact](#contact)
+Backend Software Engineer with 4+ years of experience building scalable fintech systems serving 20M+ users. Specialized in:
+- ☕ Java 21, Spring Boot, Microservices
+- 🚀 High-performance distributed systems
+- 💰 Fintech & payment processing platforms
+- 📊 Event-driven architecture with Apache Kafka
 
-## ✨ Features
+## ✨ Portfolio Features
 
-- 📱 **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile
-- ⚡ **Fast & Lightweight** - Optimized for performance
-- 🎨 **Modern Design** - Clean, professional UI with smooth animations
-- 📊 **Projects Showcase** - Display your work with metrics and technologies
-- 💼 **Experience Timeline** - Professional work history
-- 🛠️ **Skills Section** - Categorized technical skills
-- 📧 **Contact Form** - Email integration for inquiries
-- 📄 **Resume Download** - Direct PDF download
-- 🔍 **SEO Optimized** - Meta tags for better search visibility
+- 📱 **Fully Responsive** - Perfect on desktop, tablet, and mobile devices
+- ⚡ **Performance Optimized** - Fast load times and smooth animations
+- 🎨 **Modern Design** - Clean, professional UI with glass-morphism effects
+- 📊 **Quantified Achievements** - Projects with real metrics and impact
+- 💼 **Detailed Experience** - Complete work history with technologies
+- 🛠️ **Comprehensive Skills** - Categorized technical expertise
+- 📧 **Professional Contact** - LinkedIn, GitHub, Email, Phone integration
+- 📄 **Resume Download** - Direct PDF download available
+- 🔍 **SEO Optimized** - Meta tags and Open Graph for sharing
 
 ## 📁 Project Structure
 
 ```
 portfolio/
-├── index.html                 # Main HTML file
-├── css/
-│   └── style.css             # Styles and responsive design
+├── index.html                    # Main HTML file
+├── css/                          # Modular CSS architecture
+│   ├── base.css                 # Global styles & variables
+│   ├── navbar.css               # Navigation styles
+│   ├── hero.css                 # Hero section
+│   ├── about.css                # About section
+│   ├── experience.css           # Experience timeline
+│   ├── projects.css             # Projects showcase
+│   ├── skills.css               # Skills section
+│   ├── contact.css              # Contact form
+│   ├── footer.css               # Footer styles
+│   ├── components.css           # Reusable components
+│   ├── animations.css           # Animation effects
+│   └── responsive.css           # Mobile responsive
 ├── js/
-│   └── script.js             # JavaScript for interactivity
+│   └── script.js                # JavaScript interactivity
 ├── assets/
 │   ├── images/
-│   │   └── profile-photo.png # Professional photo
-│   └── resume.pdf            # Downloadable resume
-├── docs/                     # Documentation files
-│   ├── DEPLOY.md            
-│   ├── DEPLOYMENT_OPTIONS.md
-│   └── other guides...
-├── deploy-netlify.sh         # Netlify deployment script
-├── deploy-github.sh          # GitHub Pages deployment script
-└── README.md                 # This file
+│   │   └── profile-photo.png    # Professional headshot
+│   └── resume.pdf               # Downloadable resume (PDF)
+└── README.md                    # Documentation
 ```
+
+## 🚀 Live Demo
+
+**Visit the portfolio:** [https://shohrabrustam.github.io/portfolio/](https://shohrabrustam.github.io/portfolio/)
+
+## 🛠️ Technologies Used
+
+### Frontend
+- **HTML5** - Semantic markup with SEO optimization
+- **CSS3** - Modern styling with:
+  - Flexbox & Grid layouts
+  - CSS Variables for theming
+  - Glass-morphism effects
+  - Smooth animations
+  - Mobile-first responsive design
+- **JavaScript (Vanilla)** - No frameworks, pure performance
+- **Font Awesome 6** - Professional iconography
+
+### Design Features
+- Clean gradient backgrounds
+- Professional color palette (Blue accent theme)
+- Hover effects and micro-interactions
+- Cubic-bezier smooth transitions
+- Mobile responsive breakpoints (1024px, 768px, 480px, 360px)
+
+## 🎯 Key Projects Showcased
+
+1. **Real-Time Transaction Processing** - 2M+ daily transactions
+2. **Digital Lending Platform** - 20M+ active users
+3. **Loan Repayment Engine** - 500K+ calculations/day
+4. **Document Management Microservice** - 3x performance boost
+5. **Banking API Integration** - 99.9% validation accuracy
 
 ## 🚀 Getting Started
 
@@ -163,25 +199,53 @@ All content is in `index.html`. Key sections:
 - 🔍 SEO Score: 100
 - ⚙️ Best Practices: 100
 
-## 📝 License
+## 📧 Contact & Connect
 
-This project is open source and available under the [MIT License](LICENSE).
+**Shohrab Rustam** - Backend Software Engineer
 
-## 📧 Contact
+- 📧 Email: [mohdrustam001@gmail.com](mailto:mohdrustam001@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/shohrabrustam](https://www.linkedin.com/in/shohrabrustam)
+- 🐙 GitHub: [github.com/ShohrabRustam](https://github.com/ShohrabRustam)
+- 📱 Phone: +91 7417 200 362
+- 📍 Location: Bangalore, India
 
-**Shohrab Rustam**
-- Email: mohdrustam001@gmail.com
-- Phone: +91 7417 200 362
-- Location: Bangalore, India
+## 💼 Professional Summary
+
+- 🏢 Currently at **mPokket Financial Services** (Dec 2021 - Present)
+- 💰 Built systems serving **20M+ users** with **99.9% uptime**
+- ⚡ Processes **2M+ daily transactions** in production
+- 🚀 Migrated **monolithic to microservices** architecture
+- 📈 Improved API performance by **40%**
+- 👥 Mentored **5+ junior developers**
+
+## 🎓 Technical Expertise
+
+**Backend & Frameworks:** Java 21, Spring Boot, Spring MVC, Spring Data JPA, Hibernate
+
+**Microservices:** Apache Kafka, Redis, REST APIs, Event-Driven Architecture
+
+**Databases:** PostgreSQL, MySQL, Query Optimization, Database Design
+
+**DevOps & Tools:** Docker, Git, Jenkins, ELK Stack, SonarQube
+
+**Cloud & Infrastructure:** AWS, Microservices Deployment, CI/CD
+
+## 📊 Portfolio Metrics
+
+- ⭐ **Lighthouse Score:** 95+
+- 📱 **Mobile Friendly:** 100%
+- 🔍 **SEO Score:** 100
+- ⚡ **Performance:** Optimized
+- ♿ **Accessibility:** WCAG compliant
 
 ## 🙏 Acknowledgments
 
-- Design inspired by modern portfolio best practices
+- Design inspired by modern SaaS and tech company portfolios
 - Icons from [Font Awesome](https://fontawesome.com)
-- Hosted on [Netlify](https://netlify.com)
+- Hosted on [GitHub Pages](https://pages.github.com)
 
 ---
 
-⭐ If you found this portfolio template helpful, feel free to star it!
+**© 2026 Shohrab Rustam** | Backend Software Engineer | Open to Opportunities
 
-**Built with ❤️ by Shohrab Rustam**
+*Building scalable, high-performance systems that serve millions*

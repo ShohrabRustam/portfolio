@@ -3,43 +3,67 @@
    ============================================ */
 
 .skills {
-    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.75rem;
 }
 
 .skill-category {
     background: white;
     padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 28px rgba(30, 64, 175, 0.08);
-    border: 1px solid rgba(30, 64, 175, 0.08);
-    transition: all 0.3s ease;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--border-color);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .skill-category:hover {
-    box-shadow: 0 16px 40px rgba(30, 64, 175, 0.12);
-    transform: translateY(-4px);
-    border-color: rgba(30, 64, 175, 0.16);
+    box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15);
+    transform: translateY(-6px);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.skill-category:hover::before {
+    transform: scaleX(1);
 }
 
 .skill-category h3 {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    gap: 0.875rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.75rem;
+    color: var(--text-dark);
     font-weight: 700;
 }
 
 .skill-category i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover i {
+    transform: scale(1.1);
 }
 
 .skill-items {
@@ -52,22 +76,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.875rem;
     border-bottom: 1px solid var(--border-color);
-    transition: all 0.3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .skill-item:last-child {
     border-bottom: none;
+    padding-bottom: 0;
 }
 
 .skill-item:hover {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.625rem;
 }
 
 .skill-item.past-skill {
-    opacity: 0.6;
+    opacity: 0.5;
+    filter: grayscale(20%);
 }
 
 .skill-item-name {
@@ -80,15 +105,16 @@
     height: 6px;
     background: var(--border-color);
     border-radius: 999px;
-    margin-top: 0.4rem;
+    margin-top: 0.5rem;
     overflow: hidden;
 }
 
 .skill-item-progress {
     height: 100%;
-    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
     border-radius: 999px;
-    animation: fillProgress 1s ease-out forwards;
+    animation: fillProgress 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 
 @keyframes fillProgress {
@@ -100,7 +126,7 @@
     }
 }
 
-/* Ensure skill-tags styling works here too */
+/* Skill tags styling */
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
@@ -108,40 +134,45 @@
 }
 
 .skill-tags span {
-    background: var(--bg-light);
-    padding: 0.6rem 1.2rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    background: white;
+    padding: 0.65rem 1.25rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
     color: var(--text-dark);
-    transition: all 0.3s;
-    border: 1px solid transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--border-color);
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .skill-tags span:hover {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
     color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(30, 64, 175, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+    border-color: transparent;
 }
 
 .skill-tags span.past-skill {
-    opacity: 0.6;
+    opacity: 0.5;
+    filter: grayscale(30%);
     font-style: italic;
 }
 
 .skill-tags span.past-skill:hover {
-    opacity: 0.9;
+    opacity: 0.85;
+    filter: grayscale(0%);
 }
 
 .skill-tag-highlight {
-    background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(37, 99, 235, 0.1)) !important;
-    border: 1px solid rgba(30, 64, 175, 0.2) !important;
-    color: var(--primary-color) !important;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(37, 99, 235, 0.08) 100%) !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+    color: var(--accent-color) !important;
     font-weight: 600;
 }
 
 .skill-tag-highlight:hover {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color)) !important;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
     color: white !important;
-    border: 1px solid transparent !important;
+    border-color: transparent !important;
 }
